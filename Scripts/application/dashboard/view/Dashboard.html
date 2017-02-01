@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html ng-app="dashboard.controller">
+<head>
+
+
+<!-- <link type="text/css" href="../../../../Content/bootstrap/bootstrap.min.css" rel="stylesheet" /> -->
+<link type="text/css" href="../controller/dashBoard.css" rel="stylesheet" />
+	<!-------------- Jquery ---------------->
+	<script src="../../../jquey/jquery-1.12.0.min.js"></script>	
+	
+	<!-------------- Bootstrap ---------------->
+	<script src="../../../bootstrap/bootstrap.js"></script>
+	<script src="../../../underscore/underscore.min.js"></script>
+	<script src="../../../datepicker/js/bootstrap-datepicker.js"></script>
+
+	<!-------------- Angular ---------------->
+	<script src="../../../angular/angular.js"></script>
+	<script src="../../../angular-ui/angular-ui.js"></script>
+	<script src="../../../angular/angular-ui-router.min.js"></script>
+	<script src="../../../angular-ui/ui-bootstrap.js"></script>
+
+	<!-------------- Ui Grid ---------------->
+	<script src="../../../ui-grid/ui-grid.js"></script>
+	<link type="text/css" href="../../../ui-grid/ui-grid.css" rel="stylesheet" />
+
+	<!-------------- Fusion Chart ------------>
+	<script src="../../../fusioncharts/fusioncharts.js"></script>
+	<script src="../../../fusioncharts/fusioncharts.widgets.js"></script>
+	<script src="../../../fusioncharts/fusioncharts.theme.fint.js"></script>
+	<script src="../../../fusioncharts/fusioncharts.charts.js"></script>
+	<script src="../../../fusioncharts/angular-fusioncharts.min.js"></script>
+	
+
+
+	<script src="../controller/dashBoardController.js"></script>
+</head>
+
+<body>
+	<section style="width:50%; float:left" ng-controller="leftSection">
+	<table class="bar-table">	
+	<div>		
+		<h2 style="margin-bottom: 0px">
+			<span style="padding-right: 56px">REVENUE</span>
+			<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+				<span style="padding: 40px;">{{data.month}}</span>
+            </div>
+		</h2>
+	<hr class="first-hr">
+		<h4 style="margin-bottom: 0px">
+			<span style="padding-right: 32px">Revenue by Period</span>
+			<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+				<span style="padding: 45px;">{{data.revenue}}</span>
+			</div>  
+			<fusioncharts id="spark" width="15%" height="2%" type="sparkline" dataSource="{{myDataSource}}"></fusioncharts> 
+		</h4>
+		<h4 style="margin-bottom: 0px">
+			<span style="padding-right: 2px">Def Revenue by Period</span>
+			<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+				<span style="padding: 45px;">{{data.defRevenu}}</span>
+            </div> 
+            <fusioncharts id="spark" width="15%" height="2%" type="sparkline" dataSource="{{myDataSource}}"></fusioncharts> 
+		</h4>
+	</div>
+	</table>
+	<div style="margin-bottom: 15px;">
+			<input type="hidden"></input>
+	</div>
+	<table class="bar-table">	
+	<div>		
+		<h2 style="margin-bottom: 0px">
+		<span style="padding-right: 54px">ASSETS</span>
+		<fusioncharts id="sparkCol" width="4%" height="10%" type="sparkcolumn" dataSource="{{dataSource}}"></fusioncharts>
+		<div style="display:inline-block">	
+            <span style="padding: 20px;">To Date</span>
+            <span style="padding: 20px;">To Qtr</span>
+            <span style="padding: 26px;">To Yr</span>
+		</div>
+		<hr class="first-hr">
+		<h4 style="margin-bottom: 0px">
+			<span style="padding-right: 92px">Short term</span>	
+			<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+				<span style="padding: 46px;">{{data.revenue}}</span>
+			</div>             
+		</h4>
+		<h4 style="margin-bottom: 0px">
+			<span style="padding-right: 91px">Long Term</span>
+			<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+				<span style="padding: 46px;">{{data.defRevenu}}</span>
+            </div>             
+		</h4>
+	</div>
+	</table>
+	<table class="bar-table">	
+	<div>		
+		<h2 style="margin-bottom: 0px">
+			<span style="padding-right: 12px">LIABILITIES</span>
+			<fusioncharts width="4%" height="10%" type="sparkcolumn" dataSource="{{dataSource}}"></fusioncharts>
+			<div style="display:inline-block">	
+				<span style="padding: 20px;">To Date</span>
+				<span style="padding: 20px;">To Qtr</span>
+				<span style="padding: 26px;">To Yr</span>
+			</div>
+		</h2>
+	<hr class="first-hr">
+	<h4 style="margin-bottom: 0px">
+		<span style="padding-right: 92px">Short term</span>
+		<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+			<span style="padding: 46px;">{{data.revenue}}</span>
+		</div>             
+	</h4>
+	<h4 style="margin-bottom: 0px">
+		<span style="padding-right: 91px">Long Term</span>
+		<div ng-repeat="data in dataCollection.values" style="display:inline-block">	
+			<span style="padding: 46px;">{{data.defRevenu}}</span>
+		</div>             
+	</h4>
+	</div>
+	</table>
+	</section>
+	
+	<section style="width:50%; display:inline-block" ng-controller="doughnutController">
+		<div>
+		<div class="title-chart">
+			<span style="color : white">CHARTS</span>
+		</div>
+		<div style="margin-bottom: 15px;">
+			<input type="hidden"></input>
+		</div>
+		</div>
+		<div class="button ">
+			<button ng-click="generateChart('region')" class="chart-buttons"> 
+				 REGION
+			</button>
+			<button ng-click="generateChart('businessFamily')" class="chart-buttons"> 
+				 BUSINESS FAMILY
+			</button>
+			<button  ng-click="generateChart('top5Customers')" class="chart-buttons"> 
+				 TOP 5 CUSTOMER
+			</button>
+			<button ng-click="generateChart('businessLine')" class="chart-buttons">
+				 BUSINESS LINE	
+			</button>
+		</div>
+		<div id="pieChart-container">            
+    		<fusioncharts width="100%" height="400" type="Doughnut2D" dataSource="{{revenuePositionDataSource}}"></fusioncharts>
+   		</div>			
+	</section>
+	<section ng-controller="barChartController">
+        <div>
+            <h1>TOP 5 REVENUE CATEGORIES</h1>
+        </div>
+        <div>
+        <hr>
+        </div>
+        <div class="button revenueCat" style="margin-bottom : 15px">
+            <button ng-click="showme=false" class="chart-buttons"> 
+                REGION
+            </button>
+            <button  ng-click="showme=true" class="chart-buttons"> 
+                WATERFALL
+            </button>
+        </div>
+        <div id="barChart-container" ng-hide="showme">            
+      	    <fusioncharts width="400" height="300" type="bar2d" dataSource="{{init('Americas')}}" class="bar-charts"></fusioncharts>
+			<fusioncharts width="400" height="300" type="bar2d" dataSource="{{init('APAC')}}" class="bar-charts"></fusioncharts>
+			<fusioncharts width="400" height="300" type="bar2d" dataSource="{{init('EMEA')}}" class="bar-charts"></fusioncharts>
+        </div>
+		<div ng-show="showme">
+		<div style="display: inline-block">
+			<table class="bar-table">
+				<tr>
+					<td><input type="hidden"></input></td>
+					<td class="dashedBorder" ng-repeat="month in months">{{month}}</td>					
+				</tr>
+				<tr>
+					<td><input type="hidden"></input></td>
+					<td colspan="{{months.length}}"><HR></td>					
+				</tr>
+				<tr>
+					<td>New</td>
+					<td class="dashedBorder" ng-repeat="month in months">{{formatCurrencyAsMillions(waterFallDataSource['New'][month])}}
+				</tr>
+				<tr>
+					<td>Prior Transaction</td>
+					<td class="dashedBorder" ng-repeat="month in months">{{formatCurrencyAsMillions(waterFallDataSource['Prior Transaction'][month])}}
+				</tr> 
+				<tr>
+					<td>Total Revenue</td>
+					<td class="dashedBorder" ng-repeat="month in months">{{formatCurrencyAsMillions(waterFallDataSource['Total Revenue'][month])}}
+				</tr>
+				<tr>
+					<td>Cogs</td>
+					<td class="dashedBorder" ng-repeat="month in months">{{formatCurrencyAsMillions(waterFallDataSource['Cogs'][month])}}
+				</tr>
+				<tr>
+					<td>Variable Consideration</td>
+					<td class="dashedBorder" ng-repeat="month in months">{{formatCurrencyAsMillions(waterFallDataSource['Variable Consideration'][month])}}
+				</tr>
+				<tr>
+					<td>Forecast</td>
+					<td class="dashedBorder" ng-repeat="month in months">{{formatCurrencyAsMillions(waterFallDataSource['Forecast'][month])}}
+				</tr>
+			</table>
+		</div>	
+		</div>
+		</section>
+</html>

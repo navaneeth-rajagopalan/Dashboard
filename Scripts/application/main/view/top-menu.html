@@ -1,0 +1,72 @@
+﻿<nav class="navbar navbar-default">
+	<div class="container-fluid pd-l-0">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			
+			<ul class="nav navbar-nav" style="margin-right: 20px; margin-top: 5px;">
+				<li class="dropdown">
+					<a href="javascript:;" data-toggle="dropdown" role="button" aria-haspopup="true"><span class="glyphicon glyphicon-menu-hamburger" style="font-size: 19px;"></span></a>
+					<div class="dropdown-menu pd-5 menu-items">
+						<!--
+						
+						
+						
+						
+						<li ui-sref="workBench.search.condition"><a href="javascript:;"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Work Bench</a></li>
+						<li ui-sref="bizEvents.gateway"><a href="javascript:;"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Biz Events</a></li>
+						<li ui-sref="transactionUpload.gateway"><a href="javascript:;"><span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span> Transaction Upload</a></li>-->
+						<div ng-controller="main.controller.tilesmenu" ng-include="'Scripts/application/main/view/tiles_menu.html'"></div>
+					</div>
+				</li>
+			</ul>
+			<a class="navbar-brand" href="javascript:;" ui-sref="main.dashboard"></a>
+		</div>
+
+		<!-- Collect the nav links, forms, and other content for toggling -->
+		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+			<ul class="nav navbar-nav navbar-right">
+				<li><span class="glyphicon glyphicon-user account-icon"></span></li>
+				<li class="dropdown">
+					<a href="javascript:;" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="pull-left account-name-wrapper">
+							<p class="mg-0 name">Stiger Dieu </p>
+							<p class="mg-0 role">Administrator</p>
+						</span>
+						<span class="caret"></span>
+					</a>
+					<ul class="dropdown-menu">
+						<li><a href="javascript:;">Sign in </a></li>
+						<li><a href="javascript:;">Profile </a></li>
+						<li><a href="javascript:;">Sign out </a></li>
+					</ul>
+				</li>
+			</ul>
+			<div class="divider2"></div>
+            <div class="nav navbar-nav navbar-right filter-date">
+                <div class="input-group input-group-xs">
+                    <button class="btn btn-default btn-xs">Mar - 16</button>
+                </div>
+            </div>
+			<div class="nav navbar-nav navbar-right search-box">
+				<div class="input-group input-group-xs">
+					<input type="text" class="form-control input-xs" placeholder="Search" aria-describedby="sizing-addon3" />
+					<span class="input-group-addon" id="sizing-addon3">
+						<span class="glyphicon glyphicon-search"></span>
+					</span>
+				</div>
+			</div>
+
+			<!--<ul class="nav navbar-nav navbar-right">
+				<li><a href="javascript:;"><span class="glyphicon glyphicon-search"></span></a></li>
+				<li><a href="javascript:;">P</a></li>
+				<li><a href="javascript:;">R</a></li>
+			</ul>-->
+		</div><!-- /.navbar-collapse -->
+	</div><!-- /.container-fluid -->
+</nav>

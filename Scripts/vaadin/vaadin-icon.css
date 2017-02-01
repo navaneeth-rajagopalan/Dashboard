@@ -1,0 +1,112 @@
+@font-face {
+    font-family: 'Vaadin-Icons';
+    src: url('fonts/Vaadin-Icons.eot');
+    src: url('fonts/Vaadin-Icons.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Vaadin-Icons.woff') format('woff'),
+         url('fonts/Vaadin-Icons.ttf') format('truetype'),
+         url('fonts/Vaadin-Icons.svg#icomoon') format('svg');
+}
+
+.vaadinmif-dashboard:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "dashboard";
+}
+
+.vaadinmif-policies:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "toolbox";
+}
+
+.vaadinmif-security:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "lock";
+}
+
+.vaadinmif-revenue:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "area-select";
+}
+
+.vaadinmif-operations:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "tools";
+}
+
+.vaadinmif-disclosures:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "bar-chart";
+}
+
+.vaadinmif-helpdesk:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "question";
+}
+
+.vaadinmif-knowledgebase:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "lifebuoy";
+}

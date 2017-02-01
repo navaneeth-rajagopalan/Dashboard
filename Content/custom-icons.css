@@ -1,0 +1,768 @@
+@font-face {
+    font-family: 'Vaadin-Icons';
+    src: url('../Scripts/vaadin/fonts/Vaadin-Icons.eot');
+    src: url('../Scripts/vaadin/fonts/Vaadin-Icons.eot?#iefix') format('embedded-opentype'),
+         url('../Scripts/vaadin/fonts/Vaadin-Icons.woff') format('woff'),
+         url('../Scripts/vaadin/fonts/Vaadin-Icons.ttf') format('truetype'),
+         url('../Scripts/vaadin/fonts/Vaadin-Icons.svg#icomoon') format('svg');
+}
+
+/* main menu icons */
+.revicon-dashboard:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "pie-chart";
+}
+
+.revicon-policies:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "toolbox";
+}
+
+.revicon-security:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "lock";
+}
+
+.revicon-revenue:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "area-select";
+}
+
+.revicon-operations:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "cogs";
+}
+
+.revicon-disclosures:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "bar-chart";
+}
+
+.revicon-helpdesk:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "question";
+}
+
+.revicon-knowledgebase:before {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "lifebuoy";
+}
+
+/* dashboard menu icons */
+.revicon-dashboard-dailyboard:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "calendar";
+}
+
+.revicon-dashboard-operational:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "cogs";
+}
+
+.revicon-dashboard-monthend:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "form";
+}
+
+/* policies menu icons */
+.revicon-policies-indentifycontracts:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "edit";
+}
+
+.revicon-policies-perfobligation:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "bar-chart";
+}
+
+.revicon-policies-varconsideration:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "start-cog";
+}
+
+.revicon-policies-ssp:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "invoice";
+}
+
+.revicon-policies-books:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "book";
+}
+
+.revicon-policies-policies:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "toolbox";
+}
+
+.revicon-policies-profiles:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "paste";
+}
+
+.revicon-policies-costmgmt:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "cogs";
+}
+
+.revicon-policies-revlookup:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-acctstrucure:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-actrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-periods:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "calendar";
+}
+
+.revicon-policies-lblmapper:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "label";
+}
+
+.revicon-policies-currencies:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "dollar";
+}
+
+.revicon-policies-customers:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "group";
+}
+
+.revicon-policies-items:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-exrates:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-bundles:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-glmapping:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-businessevents:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-contractmodrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-holds:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-policies-approvals:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "user-check";
+}
+
+/* security menu icons */
+.revicon-security-role:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "user-check";
+}
+
+.revicon-security-user:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "user";
+}
+
+.revicon-security-password:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "password";
+}
+
+/* revenue menu icons */
+.revicon-revenue-bench:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "area-select";
+}
+
+.revicon-revenue-journals:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-ltst:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-forecast:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "chart-line";
+}
+
+.revicon-revenue-contractmgmt:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-approvals:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-simulator:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-transactionsupload:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-eventloads:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-massupdate:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-transferaccounting:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+/* operations menu icons */
+.revicon-revenue-sspupload:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-pobrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-vcrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-hierarcies:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-forecastingrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-holdrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-periodclose:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-approvalrules:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-vcanalyzer:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}
+
+.revicon-revenue-sspanalyzer:after {
+    font-family: Vaadin-Icons;
+    font-size: 42px;
+    speak: none;
+    font-weight: normal;
+    font-variant: normal;
+    font-style: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+	content: "search";
+}

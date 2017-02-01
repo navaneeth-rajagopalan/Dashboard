@@ -1,0 +1,7 @@
+﻿<ul class="nav navbar-nav col-xs-12">
+	<li ng-repeat="menu in menuItems track by $index"
+		ng-class="{'nav-active': $state.current.name === menu.state}" 
+		ui-sref="{{menu.state}}"><a href="javascript:;">{{menu.text}}</a></li>
+
+</ul>
+<div class="clearfix"></div>

@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+	<title>VC</title>
+	<meta charset="utf-8" />
+	<link href="Scripts/metro-dist/css/metro.css" rel="stylesheet" />
+	<link href="Scripts/metro-dist/css/metro-icons.min.css" rel="stylesheet" />
+	<link href="Scripts/metro-dist/css/metro-responsive.min.css" rel="stylesheet" />
+	<link href="Scripts/metro-dist/css/metro-rtl.min.css" rel="stylesheet" />
+	<link href="Scripts/metro-dist/css/metro-schemes.min.css" rel="stylesheet" />
+<link href="Content/custom-icons.css" rel="stylesheet" />
+
+	<link href="Content/bootstrap/bootstrap.min.css" rel="stylesheet" />
+	<link href="Content/bootstrap/ui-bootstrap-csp.css" rel="stylesheet" />
+	<link href="Scripts/datepicker/css/datepicker.css" rel="stylesheet" />
+	<link href="Content/toastr/toastr.min.css" rel="stylesheet" />
+	<link href="Scripts/ui-grid/ui-grid.min.css" rel="stylesheet" />
+	<link href="Scripts/malihu-custom-scrollbar/jquery.mCustomScrollbar.css" rel="stylesheet" />
+	<link href="Content/loading.css" rel="stylesheet" />
+	
+	<link href="Content/style.css" rel="stylesheet" />
+	<link href="Content/reponsive.css" rel="stylesheet" />
+	<base href="VC_Demo" />
+
+	<!--<script src="Scripts/application/main-build.js"></script>-->
+	<!--<script src="Scripts/application/main-build.min.js"></script>-->
+
+	<!-------------- Jquery ---------------->
+	<script src="Scripts/jquey/jquery-1.12.0.min.js"></script>
+	<script src="Scripts/toastr/toastr.min.js"></script>
+	<script src="Scripts/malihu-custom-scrollbar/js/uncompressed/jquery.mousewheel.js"></script>
+	<script src="Scripts/malihu-custom-scrollbar/js/uncompressed/jquery.mCustomScrollbar.js"></script>
+	<script src="Scripts/xlsx/xlsx.full.min.js"></script>
+	<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.8.0/xlsx.full.min.js"></script>-->
+	<script src="Scripts/filesaver/FileSaver.min.js"></script>
+	<!-------------- Bootstrap ---------------->
+	<script src="Scripts/bootstrap/bootstrap.js"></script>
+	<script src="Scripts/underscore/underscore.min.js"></script>
+	<script src="Scripts/datepicker/js/bootstrap-datepicker.js"></script>
+	<!-------------- Angular ---------------->
+	<script src="Scripts/angular/angular.js"></script>
+	<script src="Scripts/angular-ui/angular-ui.js"></script>
+	<script src="Scripts/angular/angular-ui-router.min.js"></script>
+	<script src="Scripts/angular-ui/ui-bootstrap.js"></script>
+	<script src="Scripts/ui-grid/ui-grid.js"></script>
+	<!-------------- Fusion Chart ------------>
+	<script src="Scripts/fusioncharts/fusioncharts.js"></script>
+	<script src="Scripts/fusioncharts/fusioncharts.widgets.js"></script>
+	<script src="Scripts/fusioncharts/fusioncharts.theme.fint.js"></script>
+	<script src="Scripts/fusioncharts/fusioncharts.charts.js"></script>
+
+	<!-------------- Application ---------------->
+	<!-------------- MAIN ---------------->
+	<script src="Scripts/application/main.js"></script>
+	<script src="Scripts/application/main/_main.js"></script>
+	<script src="Scripts/application/main/controller/_controller.js"></script>
+	<script src="Scripts/application/main/controller/tilesMenu.js"></script>
+	<script src="Scripts/application/main/controller/topmenu.js"></script>
+	<script src="Scripts/application/main/controller/menu.js"></script>
+	<!-------------- Custom Controls ---------------->
+	<script src="Scripts/application/control/_control.js"></script>
+	<script src="Scripts/application/control/datepicker.js"></script>
+	<script src="Scripts/application/control/scrollator.js"></script>
+	<script src="Scripts/application/control/grid.js"></script>
+	<script src="Scripts/application/control/tooltip.js"></script>
+	<script src="Scripts/application/control/filter.js"></script>
+	<script src="Scripts/application/control/uploadExcel.js"></script>
+	<script src="Scripts/application/control/spin.js"></script>
+	<!-------------- Helper & Utilities ---------------->
+	<script src="Scripts/application/helper/_helper.js"></script>
+	<script src="Scripts/application/helper/utils.js"></script>
+	<script src="Scripts/application/helper/commonUtils.js"></script>
+	<script src="Scripts/application/helper/serverConstants.js"></script>
+	<script src="Scripts/application/helper/constant.js"></script>
+	<script src="Scripts/application/helper/data.js"></script>
+	<script src="Scripts/application/helper/modal.js"></script>
+	<script src="Scripts/application/helper/excel.js"></script>
+	<!-------------- DASHBOARD ---------------->
+	<script src="Scripts/application/dashboard/_dashboard.js"></script>
+	<script src="Scripts/application/dashboard/controller/_controller.js"></script>
+	<script src="Scripts/application/dashboard/controller/dailyBoard.js"></script>
+	
+</head>
+<body>
+	<div ui-view="top-menu" class="top-menu-wrapper"></div>
+
+	<div class="content-wrapper"
+		  ng-class="{'pd-0': $state.current.name.indexOf('menu') > -1}">
+		<div class="pd-0 cards-wrapper" id="cards-wrapper" scrollator 
+			 ng-hide="moduleName() === 'workBench' || moduleName() === 'menu' || moduleName() === 'dashboard'">
+			<div ui-view="cards"></div>
+		</div>
+
+		<div class="pd-0 main-content-wrapper" 
+			 ng-class="{'full-width': $state.current.name.indexOf('workBench') > -1 || $state.current.name.indexOf('menu') > -1 || $state.current.name.indexOf('dashboard') > -1}">
+			<div ui-view="sub-menu" class="sub-menu"></div>
+			<div ui-view="main" scrollator options="{alwaysShowScrollbar: 0}"></div>
+		</div>
+		<div ui-view="footer" class="footer-wrapper pull-left"></div>
+		<div class="clearfix"></div>
+	</div>
+	<spin></spin>
+</body>
+</html>

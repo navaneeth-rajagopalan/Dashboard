@@ -1,0 +1,63 @@
+﻿<div role="rowgroup"
+	 class="ui-grid-header">
+	<!-- theader -->
+	<div class="ui-grid-top-panel">
+		<div class="ui-grid-header-viewport">
+			<div class="ui-grid-header-canvas">
+				<div class="ui-grid-header-cell-wrapper"
+					 ng-style="colContainer.headerCellWrapperStyle()">
+					<div role="row"
+						 class="ui-grid-header-cell-row">
+						<div class="ui-grid-header-cell ui-grid-clearfix"
+							 ng-repeat="col in colContainer.renderedColumns track by col.uid"
+							 ui-grid-header-cell
+							 col="col"
+							 ng-right-click="grid.toggleMenu($event)"
+							 render-index="$index">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div ng-repeat="col in colContainer.renderedColumns track by col.uid"
+			 ng-if="grid.appScope.$parent.readOnly !== true" 
+			 class="ui-grid-cell {{'ui-grid-' + col.uid.replace('uiGrid', 'coluiGrid')}}"
+			 style="background: #f3f3f3;">
+			<div ng-form="form">
+				<div class="ui-grid-cell-contents" ng-if="col.colDef.name === 'field'">
+					<select type="text" class="form-control input-xs"
+							ng-model="grid.appScope.$parent.newItem.field"
+							ng-options="c for c in col.colDef.options" />
+				</div>
+				</div>
+				<div class="ui-grid-cell-contents" ng-if="col.colDef.name === 'filter'" 
+					 ng-class="{'has-error': grid.appScope.$parent.newItem.filterError()}">
+					<select type="text" class="form-control input-xs"
+							ng-model="grid.appScope.$parent.newItem.filter"
+							error-tooltip data-placement="right"
+							title="{{grid.appScope.$parent.newItem.filterError() ? 'This field has errors' : ''}}"
+							ng-options="c for c in col.colDef.options" />
+				</div>
+				<div class="ui-grid-cell-contents" ng-if="col.colDef.name === 'value'"
+					 ng-class="{'has-error': grid.appScope.$parent.newItem.valueError()}">
+					<input class="form-control input-xs" 
+							error-tooltip data-placement="right"
+							title="{{grid.appScope.$parent.newItem.valueError() ? 'This field has errors' : ''}}"
+							ng-model="grid.appScope.$parent.newItem.value" />
+				</div>
+				<div class="ui-grid-cell-contents" ng-if="col.colDef.name === 'command'">
+					<a href="javascript:;" ng-click="grid.appScope.$parent.save()" ng-show="grid.appScope.$parent.editRow">
+						<span class="glyphicon glyphicon-floppy-disk"></span>
+					</a>
+					<a href="javascript:;" ng-click="grid.appScope.$parent.add()" ng-hide="grid.appScope.$parent.editRow">
+						<span class="glyphicon glyphicon-plus"></span>
+					</a>
+					<a href="javascript:;" class="remove-row" ng-click="grid.appScope.$parent.cancel()">
+						<span class="glyphicon glyphicon-ban-circle"></span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

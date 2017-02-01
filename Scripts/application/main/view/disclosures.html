@@ -1,0 +1,22 @@
+﻿<div ng-repeat="disclosures in showDisclosures() track by $index"
+	 class="col-md-12 pd-2">
+	<div ng-repeat="disclosure in disclosures track by $index"
+		 class="col-md-3">
+		<p class="disclosure_card_p"><b>{{disclosure.title}}</b></p>
+		<div ng-repeat="item in disclosure.items track by $index"
+			 class="disclosure_card text-center" 
+			 ui-sref="{{item.state}}">
+			<div class="panel card-box mg-b-0 mg-t-0 card-item">
+				<div class="panel-body box-content form-horizontal pd-t-0 pd-b-0">
+					<div class="icon_dots_disclosure">
+						<span class="mif-more-horiz mif-ani-hover-flash mif-ani-slow"></span>
+					</div>
+					<div class="text-left" style="padding: 4px;">
+						<span>{{item.text}}</span>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

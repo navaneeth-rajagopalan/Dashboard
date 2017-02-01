@@ -1,0 +1,94 @@
+body{
+	background-color: rgb(221,236,241);
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.title-chart{
+    display: block;
+    text-align: center;
+    padding: 12px;
+    background-color: #333333;
+}
+.button{
+	height: 43px;
+    /* text-align: center; */
+}
+.button:before,
+.button:after {
+    content: "";
+    display: table;
+} 
+.button:after {	
+	clear: both;
+}
+.chart-buttons{
+	background-color: #cccccc;    
+    background-image: -webkit-gradient(radial, center, top, from(#ccc), to(#777));
+    background-image: -webkit-radial-gradient(center, #f2f2f2, #777);
+    background-image: -moz-radial-gradient(center, #ccc, #777);
+    background-image: radial-gradient(to top, #ccc, #777);
+    border: none;
+    color: black;
+    padding: 10px 33px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;
+    position: relative;
+    vertical-align: top;
+    width: 24%;
+    height: 100%;
+    text-align: center;  
+    
+    box-sizing: border-box;
+    font-weight: bold;
+}
+.bar-table{
+	font-weight: bold;
+	margin-top: 2%;
+}
+.first{
+	padding-right: 60px;
+}
+svg {
+	background-color: rgb(221,236,241) !important;
+}
+.revenueCat{
+    width: 25%;       
+}
+.revenueCat .chart-buttons{
+    width:49%;
+}
+.fusioncharts-caption{
+	font-size: 18px !important;
+}
+
+hr {
+    border: 0;
+    color: black;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 20px;
+}
+.bar-charts{
+    padding-right: 20px;
+}
+.first-hr{
+    border: 0;
+    width: 99%;
+    float:left;
+    color: black;
+    background-color: black;
+    height: 3px;
+    margin-bottom: 15px;
+}
+#spark rect, .fusioncharts-legend rect{
+    opacity: 0 !important;
+}
+
+#sparkCol rect{
+    
+}
+
+.dashedBorder {
+    border-left: 1px solid black;    
+}

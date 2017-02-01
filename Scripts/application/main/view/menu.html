@@ -1,0 +1,16 @@
+﻿<div class="tile-container">
+	<div ng-repeat="item in showMetros() track by $index"
+		 class="tile-rev , bg-white fg-blue"
+		 data-role="tile"
+		 ui-sref="{{item.state}}">
+		<div class="tile-content">
+			<div align="center" style="margin-top: 40px; margin-left: 10px; font-size: large;">
+			  <span class="icon-small {{item.icon}}"></span>
+			</div>
+			<div class="icon_dots_sub">
+				<span class="mif-more-horiz mif-ani-hover-flash mif-ani-slow"></span>
+			</div>
+			<div align="center" style="margin-top: 10px; margin-left: 10px; font-size: large;">{{item.text}}</div>
+		</div>
+	</div>
+</div>

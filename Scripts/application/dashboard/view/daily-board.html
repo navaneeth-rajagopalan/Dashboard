@@ -1,0 +1,144 @@
+﻿<style>
+	.col-md-6 {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+	p {
+		font-size: 12px;
+		font-weight: bold;
+	}
+
+	.table_mid > tbody > tr > td, .table_mid > tbody > tr > th, .table_mid > tfoot > tr > td, .table_mid > tfoot > tr > th, .table_mid > thead > tr > td, .table_mid > thead > tr > th {
+		padding: 7px;
+		line-height: 1.1;
+		vertical-align: middle;
+	}
+
+	.table_rev > tbody > tr > td, .table_mid > tbody > tr > th, .table_mid > tfoot > tr > td, .table_mid > tfoot > tr > th, .table_mid > thead > tr > td {
+		padding: 7px;
+		line-height: 1.3;
+		vertical-align: middle;
+	}
+
+	.table_rev > tbody > tr > th > p {
+		font-size: 13px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.table_mid > tbody > tr > td > p {
+		font-size: 13px;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+
+	.table_mid > thead > tr > th {
+		padding: 10px;
+		line-height: 1.3;
+		vertical-align: middle;
+	}
+</style>
+<div scroll_daily options="{alwaysShowScrollbar: 0}">
+	<div class="col-md-6 col-md-offset-3" style="margin-top: 5px;">
+		<div style="border: 1px solid black;" align="center">
+			<table class="table_rev" style="width: {{screen_width/2}}px;">
+				<tr>
+					<th><p style="font-size: 11px; float: right;">Revenue By Period</p></th>
+					<th style="background-color: limegreen;"><p>JAN</p></th>
+					<td><p>$ 15,00,45,699.69</p></td>
+					<th style="background-color: limegreen;"><p>FEB</p></th>
+					<td><p>$ 18,75,57,124.61</p></td>
+					<th style="background-color: limegreen;"><p>MAR</p></th>
+					<td><p>$ 16,12,99,127.17</p></td>
+				</tr>
+				<tr>
+					<th><p style="font-size: 11px; float: right;">Def Revenue By Period</p></th>
+					<th style="background-color: #ffff00;"><p>JAN</p></th>
+					<td><p>$ 14,98,45,699.69</p></td>
+					<th style="background-color: #ffff00;"><p>FEB</p></th>
+					<td><p>$ 48,68,98,523.99</p></td>
+					<th style="background-color: #ffff00;"><p>MAR</p></th>
+					<td><p>$ 90,58,17,254.63</p></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div class="clearfix"></div>
+	<div class="col-md-12" style="margin-top: 5px;">
+		<div class="col-md-3" style="border: 1px solid black" align="center">
+			<h5><b>Revenue By Region</b></h5>
+			<div id="chart-container" style="margin-left: -14px;"></div>
+		</div>
+		<div class="col-md-6">
+			<div style="border: 1px solid black;height: {{feasible_height+9}}px;" align="center">
+				<table class="table_mid" style="">
+					<thead>
+						<tr style="background-color: #ddecf1">
+							<th>Assets</th>
+							<th></th>
+							<th>To Date</th>
+							<th>To Qtr</th>
+							<th>To Year</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td style="background-color: #9985ad"><p>Short term</p></td>
+							<td style="background-color: #c2c2a3"><p>$150,045,699.69</p></td>
+							<td style="background-color: #d9b3ff"><p>$285,086,829.41</p></td>
+							<td style="background-color: #ffccb3"><p>$997,803,902.94</p></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="background-color: #9985ad"><p>Long term</p></td>
+							<td style="background-color: #c2c2a3"><p>$150,045,699.69</p></td>
+							<td style="background-color: #d9b3ff"><p>$285,086,829.41</p></td>
+							<td style="background-color: #ffccb3"><p>$997,803,902.94</p></td>
+						</tr>
+					</tbody>
+					<thead>
+						<tr style="background-color: #80b3ff">
+							<th>Liability</th>
+							<th></th>
+							<th></th>
+							<th></th>
+							<th></th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td style="background-color: #9985ad"><p>Short term</p></td>
+							<td style="background-color: #d9b3ff"><p>$149,845,699.69</p></td>
+							<td style="background-color: #ffccb3"><p>$284,706,829.41</p></td>
+							<td style="background-color: #c2c2a3"><p>$996,473,902.94</p></td>
+						</tr>
+						<tr>
+							<td></td>
+							<td style="background-color: #9985ad"><p>Long term</p></td>
+							<td style="background-color: #d9b3ff"><p> $486,998,523.99</p></td>
+							<td style="background-color: #ffccb3"><p>$925,297,195.59</p></td>
+							<td style="background-color: #c2c2a3"><p>$3,238,540,184.55</p></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="col-md-3" style="padding: 2px; border: 1px solid black">
+			<div id="chart-baseline"></div>
+		</div>
+	</div><div class="clearfix"></div>
+	<div class="col-md-12" style="margin-top: 5px;">
+		<div class="col-md-4" style="border: 1px solid black;">
+			<div id="bar-chart-1" style="margin-left: -8px;"></div>
+		</div>
+		<div class="col-md-4" style="border: 1px solid black">
+			<div id="bar-chart-2" style="margin-left: -12px;"></div>
+		</div>
+		<div class="col-md-4" style="border: 1px solid black;">
+			<div id="bar-chart-3" style="margin-left: -15px;"></div>
+		</div>
+	</div>
+</div>

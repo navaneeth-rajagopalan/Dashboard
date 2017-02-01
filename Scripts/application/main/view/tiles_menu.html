@@ -1,0 +1,16 @@
+<div class="tile-container bg-white">
+	<div ng-repeat="item in menuItems track by $index"
+		 class="tile-sub-small {{item.bgColor}} fg-white"
+		 data-role="tile"
+		 ui-sref="{{item.state}}">
+		<div class="tile-content iconic">
+			<div class="icon_smalldots">
+				<span class="mif-more-horiz mif-ani-hover-flash mif-ani-slow"></span>
+			</div>
+			<span class="icon-small {{item.icon}}"></span>
+			<div align="center" style="margin-top: 80px;font-size: small;">
+				{{item.text}}
+			</div>
+		</div>
+	</div>
+</div>
